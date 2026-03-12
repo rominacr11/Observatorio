@@ -19,10 +19,21 @@ public class CuerpoCeleste {
     public void agregarObservacion(Observacion observacion) {
         observaciones.add(observacion);
     }
+
+    public Double getDistanciaDeLaTierra() {
+        return distanciaDeLaTierra;
+    }
+
+    public String getUnidadDeLaDistancia() {
+        return unidadDeLaDistancia;
+    }
+
+
     public List<Observacion> obtenerObservaciones() {
         return observaciones;
     }
     @Override
+
     public String toString() {
         return "CuerpoCeleste{" +
                 "nombre= " + nombre +

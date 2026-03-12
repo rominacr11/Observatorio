@@ -6,12 +6,12 @@ public class Observacion {
     private String longitudHemisferio;
     private String mesDeObservacion;
     private Double desplazamiento;
-
-    public Observacion(Double latitud, String latitudHemisferio, Double longitud, String longitudHemisferio) {
+    public Observacion(Double latitud, String latitudHemisferio, Double longitud, String longitudHemisferio,String mesDeObservacion) {
         this.latitud = latitud;
         this.latitudHemisferio = latitudHemisferio;
         this.longitud = longitud;
         this.longitudHemisferio = longitudHemisferio;
+        this.mesDeObservacion = mesDeObservacion;
         this.desplazamiento= 0.0;
     }
     public String obtenerPosicion() {
@@ -28,6 +28,10 @@ public class Observacion {
 
     public double getDesplazamiento() {
         return desplazamiento;
+    }
+
+    public void setMesDeObservacion(String mes) {
+        this.mesDeObservacion = mes;
     }
 
     @Override
